@@ -22,6 +22,61 @@ h2 {
   font-size: 125%;
 }
 
+nav {
+  text-align: center;
+  white-space: nowrap;
+}
+
+nav ul {
+  display: inline-block;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li a.menu {
+  text-decoration: none;
+  display: table-cell;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #999;
+  border-radius: 5px;
+  color: #333;
+  background-color: #fff;
+}
+
+nav li a:hover {
+  color: #fff;
+  background: #999;
+  text-decoration: none;
+}
+
+#switch {
+  display: inline-block;
+}
+
+#switch a{
+  text-decoration: none;
+  display: table-cell;
+  width: 140px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border: 0;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+#switch a:hover {
+  color: #fff;
+  background: #999;
+  text-decoration: none;
+}
+
 article {
   padding: 20px 64px 20px 20px;
   color: #666666;

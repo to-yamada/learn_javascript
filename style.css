@@ -87,23 +87,24 @@ p {
   line-height: 1.5em;
 }
 
-div.scroll a {
+div.scroll {
+  cursor: pointer;
+
   border: 1px solid #999;
   border-radius: 5px;
+
   color: #999;
-  background: #fff;
-  text-decoration: none;
+  background-color: #fff;
+
   width: 40px;
   height: 40px;
-  display: table-cell;
   text-align: center;
-  vertical-align: middle;
+  line-height: 40px;
 }
 
-div.scroll a:hover {
+div.scroll:hover {
   color: #fff;
-  background: #999;
-  text-decoration: none;
+  background-color: #999;
 }
 
 #page-top {
@@ -117,3 +118,4 @@ div.scroll a:hover {
   right: 44px;
   top: calc(50% + 40px);
 }
+

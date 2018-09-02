@@ -1,4 +1,8 @@
 $(function() {
+  // メニューの切り替え
+  $('#switch').click(function() {
+  });
+
   // 最上部へ移動
   $('#page-top').click(function(e) {
     $('html, body').animate({scrollTop:0}, 'slow');

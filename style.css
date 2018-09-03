@@ -25,34 +25,71 @@ h2 {
 nav {
   text-align: center;
   white-space: nowrap;
+  width: 800px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto;
+  padding: 0;
 }
 
-nav ul {
+ul {
+  margin: 0;
+}
+
+nav div.switch_container {
   display: inline-block;
+  width: 650px;
+  height: 40px;
+  position: relative;
+  margin: 0;
+}
+
+nav div.switch_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+nav div.select {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
 }
 
 nav li {
   list-style: none;
   display: inline-block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
 }
 
 nav li a.menu {
+  display: inline-block;
   text-decoration: none;
-  display: table-cell;
   width: 140px;
   height: 40px;
+  line-height: 40px;
   text-align: center;
-  vertical-align: middle;
   border: 1px solid #999;
   border-radius: 5px;
   color: #333;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 nav li a:hover {
   color: #fff;
   background: #999;
   text-decoration: none;
+}
+
+nav button {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #switch {
@@ -87,7 +124,7 @@ p {
   line-height: 1.5em;
 }
 
-button.scroll {
+button {
   cursor: pointer;
 
   border: 1px solid #999;
@@ -100,9 +137,10 @@ button.scroll {
   height: 40px;
   text-align: center;
   line-height: 40px;
+  box-sizing: border-box;
 }
 
-button.scroll:hover {
+button:hover {
   color: #fff;
   background-color: #999;
 }

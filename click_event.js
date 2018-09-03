@@ -1,6 +1,7 @@
 $(function() {
   // メニューの切り替え
   $('#switch').click(function() {
+    $('.switch_content').toggleClass('select');
   });
 
   // 最上部へ移動

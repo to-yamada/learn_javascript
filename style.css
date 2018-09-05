@@ -17,7 +17,7 @@ nav {
   text-align: center;
   white-space: nowrap;
   width: 650px;
-  height: 45px;
+  height: 40px;
   margin: 10px auto;
   padding: 0;
 }
@@ -27,14 +27,33 @@ nav {
   width: 650px;
   height: 45px;
   margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
-.switch_content {
-  display: none;
-}
-
-.switch_content.select {
+.switch_content_from_top {
   display: block;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transition: top .2s, opacity .2s;
+}
+
+.switch_content_from_top.hidden {
+  top: -100px;
+  opacity: 0;
+}
+
+.switch_content_from_bottom {
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  transition: top .2s, opacity .2s;
+}
+
+.switch_content_from_bottom.hidden {
+  top: 100px;
+  opacity: 0;
 }
 
 ul {

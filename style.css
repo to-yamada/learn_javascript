@@ -14,27 +14,23 @@ h1 {
 }
 
 nav {
-  text-align: center;
-  white-space: nowrap;
-  width: 650px;
-  height: 40px;
   margin: 10px auto;
-  padding: 0;
+  display: flex;
 }
 
 .switch_container {
-  display: inline-block;
-  width: 650px;
-  height: 45px;
+  height: 40px;
   margin: 0;
   position: relative;
   overflow: hidden;
+  flex: 0 0 650px;
 }
 
 .switch_content_from_top {
   display: block;
   position: absolute;
-  top: 0;
+  top: 15px;
+  left: 150px;
   opacity: 1;
   transition: top .2s, opacity .2s;
 }
@@ -92,6 +88,7 @@ nav li a:hover {
   width: 140px;
   height: 40px;
   line-height: 40px;
+  flex: 0 0 140px;
 }
 
 h2 {
